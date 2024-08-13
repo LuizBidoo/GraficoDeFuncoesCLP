@@ -34,9 +34,13 @@ Para compilar a biblioteca C e executar o script Python, siga os passos abaixo:
 ## Bibliotecas necessárias e instalação:
 1. **ctypes**: Nativa!
 
-2. **numpy**:
+2. **os**: Nativa!
+
+3. **tkinter**: Nativa!
+
+4. **numpy**:
    ```bash
    pip install numpy
-3. **matplotlib**:
+5. **matplotlib**:
     ```bash
    pip install matplotlib
