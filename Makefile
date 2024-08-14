@@ -1,22 +1,19 @@
-# Nome do compilador
+# C compiler
 CC = gcc
 
-# Flags de compilação
+# compiling flags
 CFLAGS = -Wall -Wextra -fPIC
 
-# Nome da biblioteca
+# library name
 LIBNAME = libmathlib.so
 
-# Arquivo C a ser compilado
+# c archive to be compiled to library
 SRC = mathlib.c
 
-# Diretórios
-BUILD_DIR = build
-
-# Cria a biblioteca compartilhada
+# compiles shared library
 $(LIBNAME): $(SRC)
 	$(CC) $(CFLAGS) -shared -o $(LIBNAME) $(SRC)
 
-# Executa o script Python
+# run script python
 run: $(LIBNAME)
 	python app.py
